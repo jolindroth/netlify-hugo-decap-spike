@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: ai-traffic-rush/deepseekv3ai # Replace with your GitHub repository
+  auth_endpoint: auth # This is for Netlify's OAuth flow
+  base_url: https://api.netlify.com # Required when using Netlify's OAuth
+  branch: main
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'docs'
+    label: 'Documentation'
+    folder: 'content/docs'
+    create: true
+    nested:
+      depth: 100
+      summary: '{{title}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'docs' }
+      - { label: 'Previous Page', name: 'prev', widget: 'string', required: false }
+      - { label: 'Next Page', name: 'next', widget: 'string', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'content'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Type', name: 'type', widget: 'string', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' } 
