@@ -15,3 +15,5 @@ This is the first step.
 This is the second step.
 
 {{% /steps %}}
+
+{{< figure src="static/img/chrome_512dp.png" title="Test" >}}
