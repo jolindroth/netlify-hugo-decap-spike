@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ai-traffic-rush/deepseekv3ai # Replace with your GitHub repository
+  repo: jolindroth/netlify-hugo-decap-spike # Replace with your GitHub repository
   auth_endpoint: auth # This is for Netlify's OAuth flow
   base_url: https://api.netlify.com # Required when using Netlify's OAuth
   branch: main
