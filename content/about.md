@@ -2,7 +2,9 @@
 title: About
 type: about
 ---
-This is the about page.
+- This is the about page.
+- Steg 2
+- Steg 3
 
 {{% steps %}}
 
